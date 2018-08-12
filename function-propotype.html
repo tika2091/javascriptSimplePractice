@@ -11,15 +11,27 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Math Operators!</h1>
+    <h1>Hello, world!</h1>
     <script type="text/javascript">
 
-var add = a + b;
 
-document.write(add);
+function person(firstname, lastname){
+// console.log(this);
+this.firstname = firstname;
+this.lastname = lastname;
+this.getFullName = function(){
+  return this.firstname+ ' '+this.lastname;
+  }
+
+}
 
 
-
+var Tika = new person("Tika","Gurung");
+var john = new person("John","Gurung");
+console.log(john);
+document.write(john.getFullName()+"<br>");
+document.write(Tika.getFullName()+"<br>");
+document.write(Tika.firstname);
 
 
 

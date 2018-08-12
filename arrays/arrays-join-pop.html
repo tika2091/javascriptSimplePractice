@@ -11,16 +11,37 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Math Operators!</h1>
+    <h1>Hello, world!</h1>
     <script type="text/javascript">
 
-var add = a + b;
 
-document.write(add);
+var movies = [" nirmaya"," love sasa"," gore"];
 
+// join converts arrays to string and separates with comma automatically
+// movies.join();
 
+// if you parameter in the pranthesis, it will replace comma
+// var newMovie = movies.join(" - ");
+// document.write(newMovie+"<br>");
 
+// pop removes the last element from the array
+movies.pop();
 
+document.write(movies+"<br>");
+
+// adds the item
+movies.push(" Piple");
+document.write(movies+"<br>");
+
+// it reverses the array items
+movies.reverse();
+document.write(movies+"<br>");
+
+//sorts in alphabetic order
+movies.sort();
+//and  the movies items have to be changed to string
+var newmovie = movies.join();
+document.write(newmovie);
 
 
 

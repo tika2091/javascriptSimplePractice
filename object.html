@@ -11,19 +11,24 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Math Operators!</h1>
+    <h1>Objects!</h1>
     <script type="text/javascript">
 
-var add = a + b;
 
-document.write(add);
+// var person = "My dad is a driver";
+// document.write(person.length);//
 
+//constructor object//
 
+function person (name, age,){
+this.Name = name;
+this.Age = age;
 
-
-
-
-
+}
+var tika = new person ("Tika Gurung", 33);
+var pavi = new person("Pavitra Gurung", 22);
+document.write(tika.Age);
+document.write(tika);
 
     </script>
 

@@ -11,12 +11,27 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Math Operators!</h1>
+    <h1>Hello, world!</h1>
     <script type="text/javascript">
 
-var add = a + b;
 
-document.write(add);
+function people(name, age){
+  this.name = name;
+  this.age = age;
+  this.fullInfo = getInf;
+
+}
+
+function getInf(){
+  return this.name+" "+this.age;
+
+}
+
+
+var tika = new people("Tika",33);
+
+document.write(tika.fullInfo());
+
 
 
 
